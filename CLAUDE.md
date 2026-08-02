@@ -69,9 +69,9 @@ Thai. This `CLAUDE.md` file itself stays in English, as instructions for Claude 
 
 The requirement → backlog → log workflow above is automated:
 
-- Subagent `requirement-writer` (`.claude/agents/requirement-writer.md`, at the parent
-  `Documents/Claude` level) — takes one raw requirement, does the survey / clarifying-questions
-  (always ≥3 options) / cross-reference analysis / doc-writing / backlog-update / log-update steps.
+- Subagent `requirement-writer` (`.claude/agents/requirement-writer.md`, in this repo's root) —
+  takes one raw requirement, does the survey / clarifying-questions (always ≥3 options) /
+  cross-reference analysis / doc-writing / backlog-update / log-update steps.
 - Skill `/create-requirement` (`.claude/skills/create-requirement/SKILL.md`, same location) — the
   entry point; splits a message into one or more raw requirements and runs one `requirement-writer`
   subagent per requirement, sequentially.
